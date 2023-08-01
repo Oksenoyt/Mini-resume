@@ -8,6 +8,9 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
+    @IBOutlet weak var image: UIImageView!
+
+    var presenter: ProfilePresenterProtocol!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,3 +20,10 @@ class ProfileViewController: UIViewController {
 
 }
 
+extension ProfileViewController: ProfileViewProtocol {
+    func setData() {
+        <#code#>
+    }
+
+
+}

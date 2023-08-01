@@ -15,6 +15,7 @@
 		42301E6A2A78F233001922E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42301E682A78F233001922E3 /* LaunchScreen.storyboard */; };
 		42301E722A78F2C4001922E3 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42301E712A78F2C3001922E3 /* Person.swift */; };
 		42301E742A78F598001922E3 /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42301E732A78F598001922E3 /* ProfilePresenter.swift */; };
+		42301E762A78FBE4001922E3 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42301E752A78FBE4001922E3 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		42301E6B2A78F233001922E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42301E712A78F2C3001922E3 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		42301E732A78F598001922E3 /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
+		42301E752A78FBE4001922E3 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,15 +64,48 @@
 			children = (
 				42301E5D2A78F230001922E3 /* AppDelegate.swift */,
 				42301E5F2A78F230001922E3 /* SceneDelegate.swift */,
-				42301E612A78F230001922E3 /* ProfileViewController.swift */,
-				42301E732A78F598001922E3 /* ProfilePresenter.swift */,
+				42301E792A792292001922E3 /* ProfileModule */,
 				42301E632A78F230001922E3 /* Main.storyboard */,
 				42301E662A78F233001922E3 /* Assets.xcassets */,
 				42301E682A78F233001922E3 /* LaunchScreen.storyboard */,
 				42301E6B2A78F233001922E3 /* Info.plist */,
-				42301E712A78F2C3001922E3 /* Person.swift */,
+				42301E752A78FBE4001922E3 /* DataStore.swift */,
 			);
 			path = "Mini resume";
+			sourceTree = "<group>";
+		};
+		42301E772A792240001922E3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42301E612A78F230001922E3 /* ProfileViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42301E782A792263001922E3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				42301E712A78F2C3001922E3 /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		42301E792A792292001922E3 /* ProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				42301E772A792240001922E3 /* View */,
+				42301E7A2A7922D0001922E3 /* Presenter */,
+				42301E782A792263001922E3 /* Model */,
+			);
+			path = ProfileModule;
+			sourceTree = "<group>";
+		};
+		42301E7A2A7922D0001922E3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				42301E732A78F598001922E3 /* ProfilePresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42301E622A78F230001922E3 /* ProfileViewController.swift in Sources */,
+				42301E762A78FBE4001922E3 /* DataStore.swift in Sources */,
 				42301E5E2A78F230001922E3 /* AppDelegate.swift in Sources */,
 				42301E722A78F2C4001922E3 /* Person.swift in Sources */,
 				42301E742A78F598001922E3 /* ProfilePresenter.swift in Sources */,
